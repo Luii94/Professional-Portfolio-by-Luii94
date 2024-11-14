@@ -1,12 +1,17 @@
 ---
 //BLoque de JavaScript/TypeScript
 import Layout from '../layouts/Layout.astro';
-import About from '../components/about.astro';
+import AboutMe from '../components/About_me.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Portafolio Profesional">
 	<main>
-		<h1>Hola Mundo</h1>
+		<AboutMe />
+		<Skills />
+		<Projects />
 	</main>
 </Layout>
 
@@ -20,6 +25,7 @@ import About from '../components/about.astro';
 		font-size: 20px;
 		line-height: 1.6;
 	}
+
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
