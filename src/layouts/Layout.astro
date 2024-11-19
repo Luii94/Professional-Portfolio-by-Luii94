@@ -15,7 +15,11 @@ const { title } = Astro.props;
       content="Portafilio Profesional | Luis Javier Canan Corral - Desarrollador y Programador Web"
     />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/Professional-Portfolio-by-Luii94/public/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/Professional-Portfolio-by-Luii94/public/favicon.svg"
+    />
     <!-- <meta name="generator" content={Astro.generator} /> -->
     <title>{title}</title>
   </head>
@@ -48,23 +52,33 @@ const { title } = Astro.props;
     min-height: 100vh;
     /* display: grid; */
     /* place-content: center; */
+    /* gap: 1rem; */
     color: white;
     /* font-size: 20px; */
   }
 
   main {
-    /* margin: auto; */
-    /* padding: 1rem; */
-    /* width: 800px; */
-    /* max-width: calc(100% - 2rem); */
-    /* line-height: 1.6; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  /* h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	} */
+  #about_me {
+    border: 1px solid black;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #footer {
+    border-top: 1px solid black;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+  }
 </style>
