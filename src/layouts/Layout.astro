@@ -12,14 +12,14 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Portafilio Profesional | Luis Javier Canan Corral - Programador y Desarrollador Web"
+      content="Portafilio Profesional | Luis Javier Canan Corral - Desarrollador y Programador Web"
     />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Professional-Portfolio-by-Luii94/public/favicon.svg" />
     <!-- <meta name="generator" content={Astro.generator} /> -->
     <title>{title}</title>
   </head>
-  <body>
+  <body class="grid place-content-center">
     <slot />
   </body>
 </html>
@@ -28,21 +28,43 @@ const { title } = Astro.props;
   :root {
   }
 
-	*, ::after, ::before {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   html {
     font-family: system-ui, sans-serif;
     background: #13151a;
+    scroll-behavior: smooth;
+    color-scheme: dark light;
   }
 
-	body {
-		width: 100%;
-		min-height: 100vh;
-		display: grid;
-		place-content: center;
-	}
+  body {
+    width: 100%;
+    min-height: 100vh;
+    /* display: grid; */
+    /* place-content: center; */
+    color: white;
+    /* font-size: 20px; */
+  }
+
+  main {
+    /* margin: auto; */
+    /* padding: 1rem; */
+    /* width: 800px; */
+    /* max-width: calc(100% - 2rem); */
+    /* line-height: 1.6; */
+  }
+
+  /* h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	} */
 </style>
